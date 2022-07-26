@@ -16,17 +16,58 @@ export default function HomePageContent() {
                             </div>
                         </div>
                     </div>
-                    <div className='hero-right centered-flex-row-container'><img src='/assests/hero-img-1.svg' /></div>
+                    <div className='hero-right centered-flex-row-container'><img src='/assets/hero-img-1.svg' /></div>
                 </section>
                 <section className='category-section space-S'>
                     <div className='h3 category-title'>
                         CATEGORIES
                     </div>
                     <div className='category-cards flex-row-container'>
-                        <div className='cat-cards-left'></div>
-                        <div className='cat-cards-right'>
-                            <div className='cat-card'>
-                                <div className='cat-card-img'></div><p className='cat-card-title'>Card title</p>
+                        <div className='box-left'>
+                            <div className='cat-card-left'>
+                                <div className='cat-card-img-left'>
+                                    <img src='/assets/images/cat-backpacks-img.svg' />
+                                    <div className='cat-container-left'>
+                                        <p className='sm-txt cat-card-title'>Backpacks</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='cat-cards-right '>
+                            <div className='box flex-row-container'>
+                                <div className='cat-card'>
+                                    <div className='cat-card-img'>
+                                        <img src='/assets/images/cat-clothing-img.svg' />
+                                        <div className='cat-container'>
+                                            <p className='sm-txt cat-card-title'>Clothing</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='cat-card'>
+                                    <div className='cat-card-img'>
+                                        <img src='/assets/images/cat-camping-img.svg' />
+                                        <div className='cat-container'>
+                                            <p className='sm-txt cat-card-title'>Camping Tools</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='cat-card'>
+                                    <div className='cat-card-img'>
+                                        <img src='/assets/images/cat-shoes-img.svg' />
+                                        <div className='cat-container'>
+                                            <p className='sm-txt cat-card-title'>Shoes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='cat-card'>
+                                    <div className='cat-card-img'>
+                                        <img src='/assets/images/cat-accessories-img.svg' />
+                                        <div className='cat-container'>
+                                            <p className='sm-txt cat-card-title'>Trekking Accessories
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
