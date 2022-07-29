@@ -1,0 +1,41 @@
+.filterbar-section{
+    background-color: #F7F7F7;
+    /* background-color:red; */
+}
+
+.filterbar-header{
+    justify-content: space-between;
+}
+
+.filterbar-subheader{
+justify-content: flex-start;
+}
+
+.very-sm-txt{
+    font-size: 1.2rem;
+}
+
+.filter-options {
+    margin: 0.4rem 0;
+}
+
+
+.input-label{
+    align-items: center;
+}
+
+.input-radio, .input-checkbox {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.6rem;
+}
+
+.price-range{
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+    justify-content: space-between;
+}
+
+.subheader-margin{
+    margin-bottom: 1rem;
+}

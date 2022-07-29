@@ -1,4 +1,5 @@
 import React from 'react';
+import FilterBar from '../FilterBar/FilterBar';
 import './HomePageContent.css';
 
 export default function HomePageContent() {
@@ -12,7 +13,7 @@ export default function HomePageContent() {
                             <p className='h4 hero-content'>All your trekking essentials at one place</p>
                             <div className='hero-info-btns centered-flex-row-container'>
                                 {/* <button className='btn primary'>OFFERS</button> */}
-                                <button className='btn primary'>SHOP NOW</button>
+                                <button className='btn primary' onClick={<FilterBar />}>SHOP NOW</button>
                             </div>
                         </div>
                     </div>

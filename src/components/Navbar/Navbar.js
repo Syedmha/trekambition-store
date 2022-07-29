@@ -7,9 +7,9 @@ export default function NavBar() {
             <div className="nav-brandlogo"><h1 className="sm-txt">TrekAmbition</h1></div>
             <br></br>
             <br></br>
-            <ul>
+            {/* <ul>
                 <li className="nav-item"><a href="#"><p className="sm-txt">Home</p></a></li>
-            </ul>
+            </ul> */}
             <SearchBar />
             <ul>
                 <li className="nav-item"><a href="#"><p className="sm-txt">Login</p></a></li>
