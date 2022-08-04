@@ -1,0 +1,23 @@
+.cart-billcard-container{
+    background-color: #F7F7F7;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+.billcard-title{
+    margin: 0 0 1rem 0;
+}
+.bill-item {
+    justify-content: space-between;
+    margin: 1rem 0 1rem 0;
+}
+
+.bill-hr{
+    width: 100%;
+    padding: 0.01rem;
+    background-color: black;
+}
+
+.order-btn{
+    padding: 0.6rem;
+    margin: 1rem 0 0 0;
+}

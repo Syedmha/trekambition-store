@@ -1,0 +1,26 @@
+.cart-title{
+    /* border: 1px solid red; */
+    margin-top: 1rem;
+}
+
+.cart-body{
+    /* border: 1px solid black; */
+    margin: 1rem; 
+    justify-content: space-between;  
+}
+
+.cart-productcard-section{
+    padding-top: 2rem;
+    column-gap: 3rem;
+    row-gap: 2rem;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+
+}
+
+.cart-billcard{
+    /* border: 1px solid red; */
+    padding: 2rem;
+    width: 40rem;
+
+}

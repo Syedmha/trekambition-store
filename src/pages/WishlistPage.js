@@ -1,3 +1,5 @@
+import WishList from "../components/WishList/WishList";
+
 export default function WishListPage() {
-    return <><h1>This is WishListPage</h1></>
+    return <><WishList /></>
 }

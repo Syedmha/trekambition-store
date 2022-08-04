@@ -1,0 +1,12 @@
+.wishlist-title{
+    /* border: 1px solid red; */
+    margin-top: 1rem;
+}
+
+.wishlist-body{
+    /* border: 1px solid black; */
+    margin: 1rem;
+    column-gap: 3rem;
+    row-gap: 2rem;
+    flex-wrap: wrap;
+}

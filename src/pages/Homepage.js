@@ -5,8 +5,7 @@ import ProducListPage from "./ProductListPage";
 
 export default function Homepage() {
     return <>
-        <NavBar />
-        <ProducListPage />
-        {/* <HomePageContent /> */}
+        {/* <ProducListPage /> */}
+        <HomePageContent />
     </>
 }

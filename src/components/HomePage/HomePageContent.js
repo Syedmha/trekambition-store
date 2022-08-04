@@ -1,6 +1,8 @@
 import React from 'react';
 import FilterBar from '../FilterBar/FilterBar';
 import './HomePageContent.css';
+import { Link } from "react-router-dom"
+
 
 export default function HomePageContent() {
     return (
@@ -13,7 +15,9 @@ export default function HomePageContent() {
                             <p className='h4 hero-content'>All your trekking essentials at one place</p>
                             <div className='hero-info-btns centered-flex-row-container'>
                                 {/* <button className='btn primary'>OFFERS</button> */}
-                                <button className='btn primary' onClick={<FilterBar />}>SHOP NOW</button>
+                                <Link to="/productList">
+                                    <button className='btn primary'>SHOP NOW</button>
+                                </Link>
                             </div>
                         </div>
                     </div>

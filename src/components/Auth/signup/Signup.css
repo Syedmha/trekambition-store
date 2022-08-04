@@ -1,0 +1,55 @@
+.signup-form-container {
+    /* border: 1px solid red; */
+    background-color: #F7F7F7;
+    border-radius: 1rem;
+    width: 30rem;
+    margin: 4rem auto 4rem auto;
+    padding: 2rem;
+  
+}
+
+.signup-form{
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 1rem;
+}
+
+.form-title{
+justify-content: center;
+}
+
+.input-label {
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+
+.signup-form input{
+    width: 94%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+
+.signup-form div{
+    margin-bottom: 2rem;
+}
+
+.form-input-field{
+    width: 100%;
+}
+
+.forgot-pass-link{
+    margin-top: 0.5rem;
+}
+
+.signup-btn button{
+    width: 100%;
+    font-size: 1.5rem;
+
+}
+
+.signup-btn {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
