@@ -7,21 +7,38 @@ import { v4 as uuid } from "uuid";
 
 export const categories = [
   {
-    _id: uuid(),
-    categoryName: "fiction",
+    _id: "1",
+    categoryName: "Backpacks",
+    image: "https://res.cloudinary.com/bluekart/image/upload/v1648714006/electronics.jpg",
     description:
-      "literature in the form of prose, especially novels, that describes imaginary events and people",
+      "Backpacks from Top brands made available for you!",
   },
   {
-    _id: uuid(),
-    categoryName: "non-fiction",
+    _id: "2",
+    categoryName: "Clothing",
+    image: "https://res.cloudinary.com/bluekart/image/upload/v1648714006/electronics.jpg",
     description:
-      "Non-fiction is writing that gives information or describes real events, rather than telling a story.",
+      "High quality clothing for a comfortable trek",
   },
   {
-    _id: uuid(),
-    categoryName: "horror",
+    _id: "3",
+    categoryName: "Shoes",
+    image: "https://res.cloudinary.com/bluekart/image/upload/v1648714006/electronics.jpg",
     description:
-      "Meant to cause discomfort and fear for both the character and readers, horror writers often make use of supernatural and paranormal elements in morbid stories that are sometimes a little too realistic.",
+      "Shoes are the most essential part of your trek",
+  },
+  {
+    _id: "3",
+    categoryName: "Camping Tools",
+    image: "https://res.cloudinary.com/bluekart/image/upload/v1648714006/electronics.jpg",
+    description:
+      "Durabable and innovative tools for a great camping experience",
+  },
+  {
+    _id: "1",
+    categoryName: "Backpacks",
+    image: "https://res.cloudinary.com/bluekart/image/upload/v1648714006/electronics.jpg",
+    description:
+      "Backpacks from Top brands made available for you!",
   },
 ];
