@@ -2,9 +2,12 @@ import React from 'react';
 import FilterBar from '../FilterBar/FilterBar';
 import './HomePageContent.css';
 import { Link } from "react-router-dom"
+import { useProductsData } from '../../common/context/ProductsDataContext';
 
 
 export default function HomePageContent() {
+    const { categoryData } = useProductsData();
+    console.log(categoryData);
     return (
         <>
             <main className='main-section'>
@@ -28,51 +31,40 @@ export default function HomePageContent() {
                         CATEGORIES
                     </div>
                     <div className='category-cards flex-row-container'>
-                        <div className='box-left'>
-                            <div className='cat-card-left'>
-                                <div className='cat-card-img-left'>
-                                    <img src='/assets/images/cat-backpacks-img.svg' />
-                                    <div className='cat-container-left'>
-                                        <p className='sm-txt cat-card-title'>Backpacks</p>
+
+                        {
+                            categoryData.map((cat) => {
+                                if (cat.categoryName === "Backpacks") {
+                                    return <div className='box-left'>
+                                        <div className='cat-card-left'>
+                                            <div className='cat-card-img-left'>
+                                                <img src={`${cat.image}`} alt={cat.categoryName} />
+                                                <div className='cat-container-left'>
+                                                    <p className='sm-txt cat-card-title'>{cat.categoryName}</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
+                                }
+                            })
+                        }
                         <div className='cat-cards-right '>
                             <div className='box flex-row-container'>
-                                <div className='cat-card'>
-                                    <div className='cat-card-img'>
-                                        <img src='/assets/images/cat-clothing-img.svg' />
-                                        <div className='cat-container'>
-                                            <p className='sm-txt cat-card-title'>Clothing</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='cat-card'>
-                                    <div className='cat-card-img'>
-                                        <img src='/assets/images/cat-camping-img.svg' />
-                                        <div className='cat-container'>
-                                            <p className='sm-txt cat-card-title'>Camping Tools</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='cat-card'>
-                                    <div className='cat-card-img'>
-                                        <img src='/assets/images/cat-shoes-img.svg' />
-                                        <div className='cat-container'>
-                                            <p className='sm-txt cat-card-title'>Shoes</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='cat-card'>
-                                    <div className='cat-card-img'>
-                                        <img src='/assets/images/cat-accessories-img.svg' />
-                                        <div className='cat-container'>
-                                            <p className='sm-txt cat-card-title'>Trekking Accessories
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+
+                                {
+                                    categoryData.map((cat) => {
+                                        if (cat.categoryName !== "Backpacks") {
+                                            return <div className='cat-card'>
+                                                <div className='cat-card-img'>
+                                                    <img src={`${cat.image}`} alt={cat.categoryName} />
+                                                    <div className='cat-container'>
+                                                        <p className='sm-txt cat-card-title'>{cat.categoryName}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        }
+                                    })
+                                }
                             </div>
                         </div>
                     </div>

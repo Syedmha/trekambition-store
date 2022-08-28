@@ -8,19 +8,20 @@ import NavBar from './components/Navbar/Navbar';
 import LoginPage from './pages/LoginPage';
 import CartPage from './pages/CartPage';
 import Signup from './components/Auth/signup/Signup';
+import { MockAPI } from './components/MockAPI/MockAPI';
 
 function App() {
   return (
     <BrowserRouter>
       <NavBar />
       <Routes>
+        <Route path="/mock" element={<MockAPI />} />
         <Route path='/' element={<Homepage />} />
         <Route path='/login' element={<LoginPage />} />
         <Route path='/wishlist' element={<WishListPage />} />
         <Route path='/cart' element={<CartPage />} />
         <Route path='/productList' element={<ProducListPage />} />
         <Route path='/signup' element={<Signup />} />
-
       </Routes>
     </BrowserRouter>
 
