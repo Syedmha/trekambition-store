@@ -35,32 +35,36 @@ export default function HomePageContent() {
                         {
                             categoryData.map((cat) => {
                                 if (cat.categoryName === "Backpacks") {
-                                    return <div className='box-left'>
-                                        <div className='cat-card-left'>
-                                            <div className='cat-card-img-left'>
-                                                <img src={`${cat.image}`} alt={cat.categoryName} />
-                                                <div className='cat-container-left'>
-                                                    <p className='sm-txt cat-card-title'>{cat.categoryName}</p>
+                                    return <div className='box-left' key={cat.id}>
+                                        <Link to={`/productList/categories/${cat.categoryName}`} >
+                                            <div className='cat-card-left'>
+                                                <div className='cat-card-img-left'>
+                                                    <img src={`${cat.image}`} alt={cat.categoryName} />
+                                                    <div className='cat-container-left'>
+                                                        <p className='sm-txt cat-card-title'>{cat.categoryName}</p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </Link>
+
                                     </div>
                                 }
                             })
                         }
                         <div className='cat-cards-right '>
                             <div className='box flex-row-container'>
-
                                 {
                                     categoryData.map((cat) => {
                                         if (cat.categoryName !== "Backpacks") {
-                                            return <div className='cat-card'>
-                                                <div className='cat-card-img'>
-                                                    <img src={`${cat.image}`} alt={cat.categoryName} />
-                                                    <div className='cat-container'>
-                                                        <p className='sm-txt cat-card-title'>{cat.categoryName}</p>
+                                            return <div className='cat-card' key={cat.id}>
+                                                <Link to={`/productList/categories/${cat.categoryName}`} >
+                                                    <div className='cat-card-img'>
+                                                        <img src={`${cat.image}`} alt={cat.categoryName} />
+                                                        <div className='cat-container'>
+                                                            <p className='sm-txt cat-card-title'>{cat.categoryName}</p>
+                                                        </div>
                                                     </div>
-                                                </div>
+                                                </Link>
                                             </div>
                                         }
                                     })
