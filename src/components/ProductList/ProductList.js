@@ -11,7 +11,7 @@ function ProductList() {
 
     const { productsData } = useProductsData();
     const { categoryName } = useParams();
-    console.log(CategoryRounded)
+    console.log(categoryName);
 
     return (
         <>

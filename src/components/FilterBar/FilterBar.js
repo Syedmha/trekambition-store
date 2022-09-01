@@ -33,32 +33,40 @@ function FilterBar() {
                     <ul className="ulist-style-none">
                         <li className="filter-options">
                             <div className="checkbox">
-                                <label className="input-label very-sm-txt light-txt flex-row-container" htmlFor="electronics-category">
-                                    <input id="electronics-category" className="input-checkbox" name="electronics category" type="checkbox" />
-                                    Electronics
+                                <label className="input-label very-sm-txt light-txt flex-row-container">
+                                    <input id="backpacks-category" className="input-checkbox" name="Backpacks category" type="checkbox" />
+                                    Backpacks
                                 </label>
                             </div>
                         </li>
                         <li className="filter-options">
                             <div className="checkbox">
-                                <label className="input-label very-sm-txt light-txt  flex-row-container" htmlFor="fashion-category">
-                                    <input id="fashion-category" className="input-checkbox" name="fashion category" type="checkbox" />
-                                    Fashion
+                                <label className="input-label very-sm-txt light-txt  flex-row-container">
+                                    <input id="clothing-category" className="input-checkbox" name="Clothing category" type="checkbox" />
+                                    Clothing
                                 </label>
                             </div>
                         </li>
                         <li className="filter-options">
                             <div className="checkbox">
-                                <label className="input-label very-sm-txt light-txt  flex-row-container" htmlFor="sports-category">
-                                    <input id="sports-category" className="input-checkbox" name="sports category" type="checkbox" />
-                                    Sports
+                                <label className="input-label very-sm-txt light-txt  flex-row-container">
+                                    <input id="shoes-category" className="input-checkbox" name="Shoes category" type="checkbox" />
+                                    Shoes
                                 </label>
                             </div>
                         </li>
                         <li className="filter-options">
                             <div className="checkbox">
-                                <label className="input-label very-sm-txt  light-txt  flex-row-container" htmlFor="accessories-category">
-                                    <input id="accessories-category" className="input-checkbox" name="accessories category" type="checkbox" />
+                                <label className="input-label very-sm-txt  light-txt  flex-row-container">
+                                    <input id="camping-tools-category" className="input-checkbox" name="Camping Tools category" type="checkbox" />
+                                    Camping Tools
+                                </label>
+                            </div>
+                        </li>
+                        <li className="filter-options">
+                            <div className="checkbox">
+                                <label className="input-label very-sm-txt  light-txt  flex-row-container">
+                                    <input id="accessories-category" className="input-checkbox" name="Trekking Accessories category" type="checkbox" />
                                     Accessories
                                 </label>
                             </div>
@@ -70,26 +78,35 @@ function FilterBar() {
                     <ul className="ulist-style-none">
                         <li className="filter-options">
                             <div className="radio">
-                                <label className="input-label very-sm-txt light-txt  flex-row-container" htmlFor="price-descending">
-                                    <input id="price-descending" className="input-radio" name="sort" type="radio" />
-                                    Price - High to Low
+                                <label className="input-label very-sm-txt light-txt  flex-row-container">
+                                    <input id="4-star-rating" className="input-radio" name="sort" type="radio" />
+                                    4 stars & Above
                                 </label>
                             </div>
                         </li>
                         <li className="filter-options">
                             <div className="radio">
-                                <label className="input-label very-sm-txt  light-txt  flex-row-container" htmlFor="price-ascending">
-                                    <input id="price-ascending" className="input-radio" name="sort" type="radio" />
-                                    Price - Low to High
+                                <label className="input-label very-sm-txt  light-txt  flex-row-container">
+                                    <input id="3-star-rating" className="input-radio" name="sort" type="radio" />
+                                    3 stars & Above
                                 </label>
                             </div>
                         </li>
                         <li className="filter-options">
                             <div className="radio">
-                                <label className="input-label very-sm-txt light-txt  flex-row-container" htmlFor="rating-descending">
-                                    <input id="rating-descending" className="input-radio" name="sort" type="radio"
+                                <label className="input-label very-sm-txt light-txt  flex-row-container">
+                                    <input id="2-star-rating" className="input-radio" name="sort" type="radio"
                                     />
-                                    Rating - High to Low
+                                    2 stars & Above
+                                </label>
+                            </div>
+                        </li>
+                        <li className="filter-options">
+                            <div className="radio">
+                                <label className="input-label very-sm-txt light-txt  flex-row-container">
+                                    <input id="1-star-rating" className="input-radio" name="sort" type="radio"
+                                    />
+                                    1 star & Above
                                 </label>
                             </div>
                         </li>

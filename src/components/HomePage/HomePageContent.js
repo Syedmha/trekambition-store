@@ -7,7 +7,6 @@ import { useProductsData } from '../../common/context/ProductsDataContext';
 
 export default function HomePageContent() {
     const { categoryData } = useProductsData();
-    console.log(categoryData);
     return (
         <>
             <main className='main-section'>
@@ -46,7 +45,6 @@ export default function HomePageContent() {
                                                 </div>
                                             </div>
                                         </Link>
-
                                     </div>
                                 }
                             })
