@@ -28,6 +28,7 @@ justify-content: flex-start;
     width: 1rem;
     height: 1rem;
     margin-right: 0.6rem;
+    cursor: pointer;
 }
 
 .price-range{
@@ -39,3 +40,4 @@ justify-content: flex-start;
 .subheader-margin{
     margin-bottom: 1rem;
 }
+

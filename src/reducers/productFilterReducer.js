@@ -1,11 +1,11 @@
 const initialState = {
-    priceRange: 1000,
+    priceRange: 100,
     categories: {
-        backpacks: false,
-        clothing: false,
-        shoes: false,
-        campingTools: false,
-        accessories: false
+        Backpacks: false,
+        Clothing: false,
+        Shoes: false,
+        CampingTools: false,
+        Accessories: false
     },
     rating: 0,
     sortBy: ""
@@ -13,7 +13,7 @@ const initialState = {
 
 const productFilterReducer = (state, action) => {
     switch (action.type) {
-        case "PRICE_RANGE":
+        case "SET_PRICE_RANGE":
             return {
                 ...state,
                 priceRange: action.payload,
@@ -22,32 +22,40 @@ const productFilterReducer = (state, action) => {
             return {
                 ...state,
                 categories: {
-                    ...state,
-                    backpacks: !state.categories.backpacks,
+                    ...state.categories,
+                    Backpacks: !state.categories.Backpacks,
+                },
+            }
+        case "CLOTHING":
+            return {
+                ...state,
+                categories: {
+                    ...state.categories,
+                    Clothing: !state.categories.Clothing,
                 },
             }
         case "SHOES":
             return {
                 ...state,
                 categories: {
-                    ...state,
-                    shoes: !state.categories.shoes,
+                    ...state.categories,
+                    Shoes: !state.categories.Shoes,
                 },
             }
         case "CAMPING_TOOLS":
             return {
                 ...state,
                 categories: {
-                    ...state,
-                    campingTools: !state.categories.campingTools,
+                    ...state.categories,
+                    CampingTools: !state.categories.CampingTools,
                 },
             }
         case "ACCESSORIES":
             return {
                 ...state,
                 categories: {
-                    ...state,
-                    accessories: !state.categories.accessories,
+                    ...state.categories,
+                    Accessories: !state.categories.Accessories,
                 },
             }
         case "SET_RATING":
@@ -68,4 +76,4 @@ const productFilterReducer = (state, action) => {
 
 }
 
-export default { initialState, productFilterReducer }
+export { productFilterReducer }

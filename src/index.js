@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ProductsDataProvider } from './common/context/ProductsDataContext'
 import { makeServer } from "./server";
+import { ProductFilterProvider } from './common/context/ProductFilterContext';
 
 // Call make Server
 makeServer();
@@ -13,7 +14,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ProductsDataProvider>
-      <App />
+      <ProductFilterProvider>
+        <App />
+      </ProductFilterProvider>
     </ProductsDataProvider>
   </React.StrictMode>
 );
