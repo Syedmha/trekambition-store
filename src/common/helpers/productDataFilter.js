@@ -27,4 +27,22 @@ const sortProducts = (productsData, sortByState) => {
     return productsData;
 }
 
-export { priceFilter, filterProductsByCategory, filterProductsByRatings, sortProducts };
+const fetchCategoryLabel = (categoryName) => {
+    switch (categoryName) {
+        case "Backpacks":
+            return "BACKPACKS";
+        case "Clothing":
+            return "CLOTHING";
+        case "Shoes":
+            return "SHOES";
+        case "Camping Tools":
+            return "CAMPING_TOOLS";
+        case "Accessories":
+            return "ACCESSORIES";
+        default:
+            return "";
+    }
+}
+
+
+export { priceFilter, filterProductsByCategory, filterProductsByRatings, sortProducts, fetchCategoryLabel };

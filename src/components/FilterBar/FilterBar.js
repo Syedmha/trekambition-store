@@ -22,6 +22,7 @@ function FilterBar() {
                 </div>
                 <div className='filterbar-price-filter flex-col-container  filterbar-subheader space-XL'>
                     <div className='sm-txt bold-txt flex-row-container'>Price</div>
+                    <span className='very-sm-txt'>({`₹${priceRange} / ₹10000`})</span>
                     <div className="flex-col-container flex-gap">
                         <div className="price-range flex-row-container ">
                             <p>1000</p>

@@ -36,7 +36,7 @@ export const categories = [
   },
   {
     _id: "5",
-    categoryName: "Trekking Accessories",
+    categoryName: "Accessories",
     image: '/assets/images/cat-accessories-img.svg',
     description:
       "Make your trek complete with these important accessories!",

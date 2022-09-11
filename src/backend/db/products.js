@@ -244,7 +244,7 @@ export const products = [
     _id: "19",
     productName: "Camping Cookset Stainless Steel MH100 2 Person (1.6L)",
     brand: "QUECHUA",
-    image: "https://contents.mediadecathlon.com/p1487849/b6234acfc5497d5ea47c1f309e333567/p1487849.jpg?format=auto&quality=70&f=768x0",
+    image: "https://contents.mediadecathlon.com/p1314231/fbb260f623143993dab63ade5aa80245/p1314231.jpg?format=auto&quality=70&f=1024x0",
     price: 1299,
     discountPercent: 0,
     categoryName: "Accessories",
