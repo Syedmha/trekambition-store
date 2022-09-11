@@ -15,6 +15,7 @@ function ProductList() {
     const { categoryName } = useParams();
     console.log(filteredProductData);
 
+
     return (
         <>
             <main className="main-container product-grid-2-column">
@@ -22,11 +23,11 @@ function ProductList() {
                 <section className='pl space-XL'>
                     <div className='ProductList-Heading flex-row-container'>
                         <div className='very-sm-txt bold-txt'>Showing All Products</div>
-                        <div><p>(Total 10 product)</p></div>
+                        <div><p>(Total {filteredProductData.length} product)</p></div>
                     </div>
                     <div className='product-grid-3-column'>
                         {
-                            productsData.map((product) => {
+                            filteredProductData.map((product) => {
                                 return <ProductListCard productsData={product} key={product._id} outOfStock={product.isOutOfStock} />
                             })
                         }

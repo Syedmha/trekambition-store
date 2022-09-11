@@ -1,5 +1,5 @@
 const initialState = {
-    priceRange: 100,
+    priceRange: 10000,
     categories: {
         Backpacks: false,
         Clothing: false,

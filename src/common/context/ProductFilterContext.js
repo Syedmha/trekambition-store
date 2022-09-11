@@ -5,7 +5,7 @@ import { priceFilter, filterProductsByCategory, filterProductsByRatings, sortPro
 import { useProductsData } from './ProductsDataContext';
 
 const initialState = {
-    priceRange: 100,
+    priceRange: 10000,
     categories: {
         Backpacks: false,
         Clothing: false,
@@ -34,16 +34,18 @@ function ProductFilterProvider({ children }) {
     }, [productsData])
 
     useEffect(() => {
-        // const priceRangeFilteredData = priceFilter(filteredProductData, productFilterState.priceRange);
-
-        // setFilteredProductData(priceRangeFilteredData);
-
-        const filteredProductsByCategory = filterProductsByCategory(filteredProductData, productFilterState.categories);
-
-        setFilteredProductData(filteredProductsByCategory);
+        const priceRangeFilteredData = priceFilter(productsData, productFilterState.priceRange);
+        console.log("useffect ran")
 
 
-    }, [productFilterState.categories]);
+        const filteredProductsByCategory = filterProductsByCategory(priceRangeFilteredData, productFilterState.categories);
+
+        const filteredtProductsByRating = filterProductsByRatings(filteredProductsByCategory, productFilterState.rating);
+
+        const sortedProductsByPrice = sortProducts(filteredtProductsByRating, productFilterState.sortBy);
+
+        setFilteredProductData(sortedProductsByPrice);
+    }, [productFilterState]);
 
 
 

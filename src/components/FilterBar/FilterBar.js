@@ -24,15 +24,15 @@ function FilterBar() {
                     <div className='sm-txt bold-txt flex-row-container'>Price</div>
                     <div className="flex-col-container flex-gap">
                         <div className="price-range flex-row-container ">
-                            <p>100</p>
-                            <p>500</p>
-                            <p>2000</p>
+                            <p>1000</p>
+                            <p>5000</p>
+                            <p>10000</p>
                         </div>
                         <input
                             type="range"
                             name="rangeInput"
-                            min="100"
-                            max="2000"
+                            min="1000"
+                            max="10000"
                             value={priceRange}
                             onChange={(e) => productFilterDispatch({ type: "SET_PRICE_RANGE", payload: parseInt(e.target.value) })}
                         />
