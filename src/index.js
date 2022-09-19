@@ -3,9 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { ProductsDataProvider } from './common/context/ProductsDataContext'
 import { makeServer } from "./server";
-import { ProductFilterProvider } from './common/context/ProductFilterContext';
+import { ProductFilterProvider, ProductsDataProvider, AuthenticationContextProvider, UserDataContextProvider } from './common/context/index';
 
 // Call make Server
 makeServer();
@@ -13,12 +12,16 @@ makeServer();
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ProductsDataProvider>
-      <ProductFilterProvider>
-        <App />
-      </ProductFilterProvider>
-    </ProductsDataProvider>
-  </React.StrictMode>
+    <AuthenticationContextProvider>
+      <UserDataContextProvider>
+        <ProductsDataProvider>
+          <ProductFilterProvider>
+            <App />
+          </ProductFilterProvider>
+        </ProductsDataProvider>
+      </UserDataContextProvider>
+    // </AuthenticationContextProvider>
+  </React.StrictMode >
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -22,7 +22,7 @@ const ProductFilterContext = createContext(initialState);
 const useProductFilterContext = () => useContext(ProductFilterContext);
 
 
-function ProductFilterProvider({ children }) {
+const ProductFilterProvider = ({ children }) => {
     const { productsData } = useProductsData();
 
     const [filteredProductData, setFilteredProductData] = useState(productsData);
@@ -58,4 +58,4 @@ function ProductFilterProvider({ children }) {
     )
 }
 
-export { useProductFilterContext, ProductFilterProvider } 
+export { useProductFilterContext, ProductFilterProvider };

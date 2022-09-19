@@ -8,7 +8,7 @@ const ProductsDataContext = createContext({
 
 const useProductsData = () => useContext(ProductsDataContext);
 
-function ProductsDataProvider({ children }) {
+const ProductsDataProvider = ({ children }) => {
     const [productsData, setProductsData] = useState([]);
     const [categoryData, setCategoryData] = useState([]);
 
@@ -48,4 +48,4 @@ function ProductsDataProvider({ children }) {
     )
 }
 
-export { useProductsData, ProductsDataProvider }
+export { useProductsData, ProductsDataProvider };
